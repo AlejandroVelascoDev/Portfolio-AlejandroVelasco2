@@ -32,7 +32,7 @@ const projects = [
   {
     id: 3,
     title: "Portfolio Website",
-    description: "A creative portfolio website for a photographer with image gallery and contact form.",
+    description: "My portfolio website.",
     image: "/placeholder.svg?height=600&width=800",
     tags: ["Next.js", "Framer Motion", "GSAP", "Tailwind CSS"],
     demoLink: "#",

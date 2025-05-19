@@ -48,7 +48,7 @@ export function About() {
                 className="object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-purple-600 to-pink-500 rounded-full z-0 animate-bounce"></div>
+            <div className="absolute -bottom-6 -right-4 w-32 h-32 bg-gradient-to-br from-purple-600 to-pink-500 rounded-full z-0 animate-bounce"></div>
 
           </motion.div>
 
@@ -70,7 +70,8 @@ export function About() {
               My journey in web development started when I built my first website in college. Since then, I've worked on
               numerous projects ranging from small business websites to complex web applications for enterprise clients.
             </p>
-            <div className="grid grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+
               <div>
                 <h4 className="font-semibold text-purple-600 dark:text-purple-400 mb-2">Name:</h4>
                 <p className="text-gray-700 dark:text-gray-300">Alejandro Velasco</p>
@@ -88,7 +89,7 @@ export function About() {
                 <p className="text-gray-700 dark:text-gray-300">Freelance / Full-time</p>
               </div>
             </div>
-           <div className="w-96 h-1 relative mx-auto mb-5 bg-gradient-to-r from-purple-600 to-pink-500 overflow-hidden">
+           <div className="w-64 h-1 relative mx-auto mb-5 bg-gradient-to-r from-purple-600 to-pink-500 overflow-hidden">
   <div className="absolute top-0 left-0 w-full h-full animate-shimmer"></div>
 </div>
 
