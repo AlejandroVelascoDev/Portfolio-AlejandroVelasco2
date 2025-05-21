@@ -19,33 +19,33 @@ export function Footer() {
           </div>
           <div className="flex space-x-4">
             <Link
-              href="#"
+              href="https://github.com/AlejoDV-a"
               className="text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400 transition-colors"
             >
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/alejandro-vs/"
               className="text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400 transition-colors"
             >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
-            <Link
+            {/* <Link
               href="#"
               className="text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400 transition-colors"
             >
               <Twitter className="h-5 w-5" />
               <span className="sr-only">Twitter</span>
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               href="#"
               className="text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400 transition-colors"
             >
               <Instagram className="h-5 w-5" />
               <span className="sr-only">Instagram</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 text-center">

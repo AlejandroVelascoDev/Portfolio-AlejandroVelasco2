@@ -21,10 +21,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "A drag-and-drop task management application with user authentication and real-time updates.",
+    title: "MediDash",
+    description: "MediDash is a modern web application for medical appointment management, developed with state-of-the-art technologies such as ** Next.js **, ** TypeScript ** and ** Neon (PostgreSQL) **. Includes admin panel,  and reusable components for a smooth experience.",
     image: "/placeholder.svg?height=600&width=800",
-    tags: ["React", "Firebase", "Tailwind CSS", "DnD Kit"],
+    tags: ["React", "TypeScript", "Tailwind CSS", "Next.js", "PostgreSQL"],
     demoLink: "#",
     githubLink: "#",
     category: "app",
