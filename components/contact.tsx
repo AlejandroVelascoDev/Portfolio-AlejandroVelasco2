@@ -4,56 +4,23 @@ import type React from "react"
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Mail, MapPin, Phone, Send } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { Mail, MapPin, Phone,  } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 
-import TextPressure from "./ui/textPressure"
+import TextPressure from "./ui/TextPressure"
 
 
 export function Contact() {
-  const { toast } = useToast()
-  const [formData, setFormData] = useState({
+  useToast()
+  const [] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
   })
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [] = useState(false)
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    try {
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    })
-
-    if (res.ok) {
-      alert('Mensaje enviado correctamente')
-      setFormData({ name: '', email: '', subject: '', message: '' })
-    } else {
-      const error = await res.json()
-      alert(`Error: ${error.message}`)
-    }
-  } catch (err) {
-    console.error('Error al enviar:', err)
-    alert('Ocurrió un error al enviar el mensaje')
-  } finally {
-    setIsSubmitting(false)
-  }
-    
-  }
 
   return (
     <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-900">

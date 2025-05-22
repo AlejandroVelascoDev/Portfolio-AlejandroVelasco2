@@ -2,8 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Download } from "lucide-react"
+
 
 export function About() {
   return (
@@ -40,13 +39,7 @@ export function About() {
             className="relative"
           >
             <div className="aspect-square relative rounded-2xl overflow-hidden border-8 border-white dark:border-gray-800 shadow-xl">
-              <Image
-                src="/placeholder.svg?height=600&width=600"
-                alt="Profile"
-                width={600}
-                height={600}
-                className="object-cover"
-              />
+          
             </div>
             <div className="absolute -bottom-6 -right-4 w-32 h-32 bg-gradient-to-br from-purple-600 to-pink-500 rounded-full z-0 animate-bounce"></div>
 

@@ -13,7 +13,7 @@ const projects = [
     title: "E-commerce Website",
     description:
       "A fully responsive e-commerce platform with product filtering, cart functionality, and payment integration.",
-    image: "/placeholder.svg?height=600&width=800",
+    // image: "/placeholder.svg?height=600&width=800",
     tags: ["React", "Next.js", "Tailwind CSS", "Stripe"],
     demoLink: "#",
     githubLink: "#",
@@ -43,7 +43,7 @@ const projects = [
     id: 4,
     title: "Weather Dashboard",
     description: "A weather dashboard that displays current and forecasted weather data for any location.",
-    image: "/placeholder.svg?height=600&width=800",
+    // image: "/placeholder.svg?height=600&width=800",
     tags: ["React", "OpenWeather API", "Chart.js", "Tailwind CSS"],
     demoLink: "#",
     githubLink: "#",
@@ -52,7 +52,7 @@ const projects = [
 ]
 
 export function Projects() {
-  const [filter, setFilter] = useState("all")
+  const [filter] = useState("all")
 
   const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.category === filter)
 
@@ -116,13 +116,13 @@ export function Projects() {
               className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="relative h-64 overflow-hidden">
-                <Image
+                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   width={800}
                   height={600}
                   className="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
-                />
+                /> 
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{project.title}</h3>
