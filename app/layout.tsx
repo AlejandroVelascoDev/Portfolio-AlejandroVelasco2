@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 export const metadata: Metadata = {
   title: 'Portfolio AlejandroV',
   description: 'Portfolio de AlejandroV',
-  generator: 'v0.dev',
+  generator: 'dalexdev.dev',
 }
 
 export default function RootLayout({
