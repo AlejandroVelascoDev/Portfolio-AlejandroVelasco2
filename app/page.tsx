@@ -9,7 +9,6 @@ import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { Navbar } from "@/components/navbar"
 
-import contact from '@/components/contact';
 
 
 
