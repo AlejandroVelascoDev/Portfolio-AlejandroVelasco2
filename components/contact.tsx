@@ -1,29 +1,24 @@
-"use client"
+"use client";
 
+import { useRouter } from 'next/router';
 import type React from "react"
-
-import { useState } from "react"
 import { motion } from "framer-motion"
 import { Mail, MapPin, Phone,  } from "lucide-react"
-import { useToast } from "@/hooks/use-toast"
+import dynamic from "next/dynamic"
+const TextPressure = dynamic(() => import('@/components/ui/TextPressure'), { ssr: false });
 
-import TextPressure from "./ui/TextPressure"
 
+export default function HomePage() {
+  return (
+    <main>
+      <Contact />
+    </main>
+  );
+}
 
 export function Contact() {
-  useToast()
-  const [] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  })
-  const [] = useState(false)
-
-
-
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section  id="contact" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

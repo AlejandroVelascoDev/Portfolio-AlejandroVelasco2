@@ -25,6 +25,7 @@ export function Navbar() {
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
+    { name: "Contact", href: "#contact" },
    
   ]
 
@@ -54,11 +55,11 @@ export function Navbar() {
             </Link>
           ))}
           <ThemeToggle />
-       <Link href="#contact">
+       {/* <Link href="#contact">
           <Button className="bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white">
              Contact
            </Button>
-       </Link>
+       </Link> */}
 
         </nav>
 
@@ -85,9 +86,7 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button className="bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white w-full">
-              Resume
-            </Button>
+       
           </div>
         </div>
       )}

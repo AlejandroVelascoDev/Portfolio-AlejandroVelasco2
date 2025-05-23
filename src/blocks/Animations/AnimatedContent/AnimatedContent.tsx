@@ -1,6 +1,4 @@
-/*
-	Installed from https://reactbits.dev/ts/tailwind/
-*/
+
 
 import { useRef, useEffect, useState, ReactNode } from "react";
 import { useSpring, animated, SpringConfig } from "@react-spring/web";
