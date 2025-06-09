@@ -12,6 +12,7 @@ const skills = [
       { name: "React", level: 80 },
       { name: "Next.js", level: 75 },
       { name: "Tailwind CSS", level: 85 },
+      {name: "Angular", level: 70}
     ],
   },
   {
@@ -19,9 +20,10 @@ const skills = [
     icon: <Code className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
     items: [
       { name: "Node.js", level: 70 },
-      { name: "REST APIs", level: 75 },
+      { name: "Java", level: 75 },
       { name: "TypeScript", level: 60 },
       { name: "Php", level: 60 },
+      {name: "Python", level: 70}
     ],
   },
   {
@@ -46,7 +48,7 @@ const skills = [
     category: "Mobile Development",
     icon: <Smartphone className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
     items: [
-      { name: "React Native", level: 50 },
+      { name: "React Native", level: 80 },
       { name: "Responsive Design", level: 85 },
     ],
   },
