@@ -10,15 +10,6 @@ My journey in web development began in college when I built my first website. Si
 
 ---
 
-## 🔧 Technologies & Tools
-
-- **Frontend**: React, Next.js, Tailwind CSS, HTML5, CSS3, JavaScript
-- **Backend**: Node.js, PHP, REST APIs
-- **Database**: MongoDB, PostgreSQL, SQLite, SQL
-- **Design**: Figma, UI/UX principles, Responsive Design
-- **Other**: Git, Docker, Testing, Agile methodologies
-
----
 
 ## 📍 Location
 
