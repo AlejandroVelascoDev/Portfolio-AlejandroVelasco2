@@ -45,8 +45,7 @@ const projects = [
     description: "A weather dashboard that displays current and forecasted weather data for any location.",
     // image: "/placeholder.svg?height=600&width=800",
     tags: ["React", "OpenWeather API", "Chart.js", "Tailwind CSS"],
-    demoLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/AlejandroVelascoDev/AppClima",
     category: "app",
   },
 ]

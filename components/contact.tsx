@@ -81,7 +81,7 @@ return (
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-purple-600 mb-1">Location</h3>
-                <p className="text-gray-700 dark:text-gray-300">Popayàn, Cauca, Colombia</p>
+                <p className="text-gray-700 dark:text-gray-300">Popayán, Cauca, Colombia</p>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 
 export function About() {
@@ -16,10 +17,10 @@ export function About() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 <motion.span
-      className="bg-gradient-to-r from-purple-600 to-pink-500 text-transparent rounded-md bg-clip-text inline-block"
-      whileHover={{ scale: 1.1, rotate: -2 }}
-      whileTap={{ scale: 0.95, rotate: 0 }}
-      transition={{ type: "spring", stiffness: 300 }}
+                     className="bg-gradient-to-r from-purple-600 to-pink-500 text-transparent rounded-md bg-clip-text inline-block"
+                     whileHover={{ scale: 1.1, rotate: -2 }}
+                     whileTap={{ scale: 0.95, rotate: 0 }}
+                     transition={{ type: "spring", stiffness: 300 }}
                   >
                    About Me
                       </motion.span>
@@ -29,7 +30,7 @@ export function About() {
         </motion.div>
        
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className=" rounded-lg grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -37,11 +38,18 @@ export function About() {
             viewport={{ once: true, margin: "-100px" }}
             className="relative"
           >
-            <div className="aspect-square relative rounded-2xl overflow-hidden border-8 border-white dark:border-gray-800 shadow-xl">
-          
-            </div>
-            <div className="absolute -bottom-6 -right-4 w-32 h-32 bg-gradient-to-br from-purple-600 to-pink-500 rounded-full z-0 animate-bounce"></div>
+            
+             <Image
+               src="/yoanime.png"
+               alt="Alejandro Velasco"
+               width={400}
+               height={400}
+               className="object-cover rounded-xl"
+             />
+             
+             <Image src={""} alt={""} />
 
+            
           </motion.div>
 
           <motion.div
@@ -74,11 +82,11 @@ export function About() {
               </div>
               <div>
                 <h4 className="font-semibold text-purple-600 dark:text-purple-400 mb-2">Location:</h4>
-                <p className="text-gray-700 dark:text-gray-300">Popayàn, Col</p>
+                <p className="text-gray-700 dark:text-gray-300">Popayán, Col</p>
               </div>
               <div>
                 <h4 className="font-semibold text-purple-600 dark:text-purple-400 mb-2">Availability:</h4>
-                <p className="text-gray-700 dark:text-gray-300">Freelance / Full-time</p>
+                <p className="text-gray-700 dark:text-gray-300"> Full-time</p>
               </div>
             </div>
            <div className="w-64 h-1 relative mx-auto mb-5 bg-gradient-to-r from-purple-600 to-pink-500 overflow-hidden">

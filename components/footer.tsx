@@ -19,7 +19,7 @@ export function Footer() {
           </div>
           <div className="flex space-x-4">
             <Link
-              href="https://github.com/AlejoDV-a"
+              href="https://github.com/AlejandroVelascoDev"
               className="text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400 transition-colors"
             >
               <Github className="h-5 w-5" />
