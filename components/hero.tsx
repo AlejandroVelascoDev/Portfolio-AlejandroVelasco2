@@ -20,10 +20,8 @@ export function Hero() {
   const [floatStyles, setFloatStyles] = useState<FloatStyle[]>([])
 
   const scrollToNext = () => {
-    if (scrollRef.current) {
-      const nextSection = document.getElementById("about")
-      nextSection?.scrollIntoView({ behavior: "smooth" })
-    }
+    const nextSection = document.getElementById("about")
+    nextSection?.scrollIntoView({ behavior: "smooth" })
   }
 
   useEffect(() => {
@@ -44,14 +42,14 @@ export function Hero() {
       ref={scrollRef}
       className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-900 dark:to-gray-800 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-t from-cyan-50 to-blue-50 dark:from-gray-950 dark:to-gray-800 z-0" />
 
       {/* Animated background elements */}
-          <div className="absolute inset-0 overflow-hidden z-0">
+      <div className="absolute inset-0 overflow-hidden z-0">
         {floatStyles.map((style, i) => (
           <motion.div
             key={i}
-            className="absolute rounded-full bg-gradient-to-br from-purple-300/20 to-pink-300/20 dark:from-purple-600/10 dark:to-pink-600/10"
+            className="absolute rounded-full bg-gradient-to-br from-cyan-300/20 to-blue-300/20 dark:from-cyan-600/10 dark:to-blue-600/10"
             style={style}
             initial={{ y: 0 }}
             animate={{ y: [0, -10, 0] }}
@@ -66,7 +64,6 @@ export function Hero() {
         ))}
       </div>
 
-
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
@@ -76,7 +73,7 @@ export function Hero() {
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center">
               <motion.span
-                className="bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text inline-block"
+                className="bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text inline-block"
                 whileHover={{ scale: 1.1, rotate: -2 }}
                 whileTap={{ scale: 0.95, rotate: 0 }}
                 transition={{ type: "spring", stiffness: 300 }}
@@ -107,7 +104,7 @@ export function Hero() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <Link href="#projects">
-                <Button className="bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white px-8 py-6 text-lg" size="lg">
+                <Button className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-6 text-lg" size="lg">
                   View My Work
                 </Button>
               </Link>
@@ -121,7 +118,7 @@ export function Hero() {
               <Link href="#contact">
                 <Button
                   variant="outline"
-                  className="border-purple-600 text-purple-600 hover:bg-purple-50 dark:border-purple-400 dark:text-purple-400 dark:hover:bg-gray-800 px-8 py-6 text-lg"
+                  className="border-cyan-600 text-cyan-600 hover:bg-cyan-50 dark:border-cyan-400 dark:text-cyan-400 dark:hover:bg-gray-800 px-8 py-6 text-lg"
                   size="lg"
                 >
                   Contact Me
@@ -139,7 +136,7 @@ export function Hero() {
           transition={{
             duration: 1,
             delay: 1,
-            repeat: Number.POSITIVE_INFINITY,
+            repeat: Infinity,
             repeatType: "reverse",
           }}
         >
@@ -149,7 +146,7 @@ export function Hero() {
             onClick={scrollToNext}
             className="rounded-full h-12 w-12 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-md"
           >
-            <ArrowDown className="h-5 w-5 text-purple-600 dark:text-purple-400" />
+            <ArrowDown className="h-5 w-5 text-cyan-600 dark:text-cyan-400" />
             <span className="sr-only">Scroll down</span>
           </Button>
         </motion.div>

@@ -25,7 +25,6 @@ export function Navbar() {
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" },
-   
   ]
 
   return (
@@ -37,7 +36,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link
           href="/"
-          className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text"
+          className="text-2xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text"
         >
           Portfolio
         </Link>
@@ -48,18 +47,12 @@ export function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+              className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
             >
               {link.name}
             </Link>
           ))}
           <ThemeToggle />
-       {/* <Link href="#contact">
-          <Button className="bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white">
-             Contact
-           </Button>
-       </Link> */}
-
         </nav>
 
         {/* Mobile Navigation Toggle */}
@@ -79,13 +72,12 @@ export function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 py-2 transition-colors"
+                className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 py-2 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
-       
           </div>
         </div>
       )}

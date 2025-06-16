@@ -13,27 +13,27 @@ const projects = [
     title: "E-commerce Website",
     description:
       "A fully responsive e-commerce platform with product filtering, cart functionality, and payment integration.",
-     image: "/Ecommercei.png?height=600&width=800",
+    image: "/Ecommercei.png?height=600&width=800",
     tags: ["React", "Next.js", "Tailwind CSS", "Stripe"],
     githubLink: "#",
     category: "web",
   },
   {
     id: 2,
-    title: "MediDash",
-    description: "MediDash is a modern web application for medical appointment management, developed with state-of-the-art technologies such as ** Next.js **, ** TypeScript ** and ** Neon (PostgreSQL) **. Includes admin panel,  and reusable components for a smooth experience.",
-    image: "/MediDash.png?height=600&width=800",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Next.js", "PostgreSQL"],
-    githubLink: "https://github.com/AlejoDV-a/MediDash",
+    title: "MediCitas",
+    description: "MediDash is a modern web application for medical appointment management, developed with state-of-the-art technologies such as Laravel ,  BootStrap and MySql. Includes admin panel,  and reusable components for a smooth experience.",
+    image: "/Medicitas.jpg?height=600&width=800",
+    tags: ["Laravel", "MySql", "BootStrap", ],
+    githubLink: "https://github.com/AlejandroVelascoDev/Agenda-citasS",
     category: "app",
   },
   {
     id: 3,
     title: "Portfolio Website",
     description: "My portfolio website.",
-    image: "/portfolio.png?height=600&width=800",
+    image: "/portfolionew.png?height=600&width=800",
     tags: ["Next.js", "Framer Motion", "Next.js", "Tailwind CSS"],
-    demoLink: "#",
+    demoLink: "https://www.dalexdev.online/",
     githubLink: "#",
     category: "web",
   },
@@ -50,11 +50,10 @@ const projects = [
 
 export function Projects() {
   const [filter] = useState("all")
-
   const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.category === filter)
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,15 +64,15 @@ export function Projects() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             <motion.span
-                  className="bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text inline-block"
-                  whileHover={{ scale: 1.1, rotate: -2 }}
-                  whileTap={{ scale: 0.95, rotate: 0 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  >
-                   My Projects
-                      </motion.span>
+              className="bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text inline-block"
+              whileHover={{ scale: 1.1, rotate: -2 }}
+              whileTap={{ scale: 0.95, rotate: 0 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              My Projects
+            </motion.span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-pink-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto mb-6"></div>
           <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
             Here are some of my recent projects. Each project is a unique piece of development that showcases my skills
             and passion for web development.
@@ -82,23 +81,13 @@ export function Projects() {
 
         <div className="flex justify-center mb-12">
           <div className="inline-flex bg-white dark:bg-gray-800 p-1 rounded-lg shadow-md">
-           <motion.div
-                 whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                 transition={{ type: "spring", stiffness: 300 }}
-                    >
-   
-                    <Button
-                             variant="outline"
-                             className="border-purple-600 text-purple-600 hover:bg-purple-50 dark:border-purple-400 dark:text-purple-400 dark:hover:bg-gray-800 px-8 py-6 text-lg"
-                             size="lg"
-                     >
-                         All
-                     </Button>
-   
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+             
             </motion.div>
-        
-       
           </div>
         </div>
 
@@ -113,13 +102,13 @@ export function Projects() {
               className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="relative h-64 overflow-hidden">
-                 <Image
+                <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   width={800}
                   height={600}
                   className="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
-                /> 
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{project.title}</h3>
@@ -129,7 +118,7 @@ export function Projects() {
                     <Badge
                       key={tag}
                       variant="secondary"
-                      className="bg-purple-100 text-purple-800 dark:bg-gray-700 dark:text-purple-300"
+                      className="bg-cyan-100 text-cyan-800 dark:bg-gray-700 dark:text-cyan-300"
                     >
                       {tag}
                     </Badge>
@@ -138,7 +127,7 @@ export function Projects() {
                 <div className="flex gap-4">
                   <Button
                     variant="outline"
-                    className="border-purple-600 text-purple-600 hover:bg-purple-50 dark:border-purple-400 dark:text-purple-400 dark:hover:bg-gray-700"
+                    className="border-cyan-600 text-cyan-600 hover:bg-cyan-50 dark:border-cyan-400 dark:text-cyan-400 dark:hover:bg-gray-700"
                     asChild
                   >
                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
@@ -146,7 +135,7 @@ export function Projects() {
                     </a>
                   </Button>
                   <Button
-                    className="bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white"
+                    className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white"
                     asChild
                   >
                     <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
@@ -160,13 +149,7 @@ export function Projects() {
         </div>
 
         <div className="text-center mt-12">
-          <Button
-            variant="outline"
-            className="border-purple-600 text-purple-600 hover:bg-purple-50 dark:border-purple-400 dark:text-purple-400 dark:hover:bg-gray-800"
-            size="lg"
-          >
-            View All Projects
-          </Button>
+        
         </div>
       </div>
     </section>
