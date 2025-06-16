@@ -3,7 +3,7 @@ import { Github, Linkedin } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-gray-50 dark:bg-gray-950 border-t border-gray-950 dark:border-gray-950">
+    <footer className="bg-gray-50 dark:bg-gray-950   ">
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
@@ -13,7 +13,7 @@ export function Footer() {
             >
               Portfolio
             </Link>
-            <p className="text-white dark:text-gray-300 max-w-md">
+            <p className="text-white dark:text-gray-950 max-w-md">
               Creating beautiful, functional, and user-centered digital experiences through modern full stack development.
             </p>
           </div>
@@ -36,7 +36,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 text-center">
-          <p className="text-white dark:text-gray-300">
+          <p className="text-white dark:text-gray-950">
             © {new Date().getFullYear()} Alejandro Velasco. All rights reserved.
           </p>
         </div>
