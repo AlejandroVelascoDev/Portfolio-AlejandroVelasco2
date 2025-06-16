@@ -4,23 +4,24 @@ Hello! I'm **Alejandro Velasco**, a passionate full stack developer with a keen 
 
 ---
 
-## 🧠 About Me
+##  About Me
 
 My journey in web development began in college when I built my first website. Since then, I've worked on a wide variety of projects—from sleek business landing pages to complex, scalable applications for enterprise clients. My goal is to bridge the gap between design and development to deliver seamless user experiences.
 
 ---
 
 
-## 📍 Location
+##  Location
 
 Popayán, Colombia
 
 ---
 
-## 📬 Contact
+##  Contact
 
 - **Email**: [alejandrovdv489@gmail.com](mailto:alejandrovdv489@gmail.com)
 - **Availability**: Freelance / Full-time
+- **Portfolio**: https://www.dalexdev.online/
 
 ---
 
