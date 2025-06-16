@@ -13,7 +13,7 @@ export function Footer() {
             >
               Portfolio
             </Link>
-            <p className="text-white dark:text-gray-950 max-w-md">
+            <p className="text-gray-950 dark:text-white max-w-md">
               Creating beautiful, functional, and user-centered digital experiences through modern full stack development.
             </p>
           </div>
@@ -36,7 +36,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 text-center">
-          <p className="text-white dark:text-gray-950">
+          <p className="text-gray-950 dark:text-white">
             © {new Date().getFullYear()} Alejandro Velasco. All rights reserved.
           </p>
         </div>
