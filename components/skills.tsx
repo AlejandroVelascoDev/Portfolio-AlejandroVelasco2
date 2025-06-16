@@ -143,13 +143,13 @@ export function Experience() {
       role: "Freelancer",
       company: "Freelance",
       years: "2023 - 2025",
-      description: "Desarrollé apliaciones web funcionales con un BackEnd y FrontEnd con buenas practicas para mejoras y escalabilidad.",
+      description: "I developed functional web applications with a BackEnd and FrontEnd with good practices for improvement and scalability.",
     },
     {
       role: "Backend Developer",
       company: "",
       years: "2025",
-      description: "Implementé APIs RESTful en Node.js y bases de datos relacionales y no relacionales.",
+      description: "I implemented RESTful APIs in Nest.js and relational and non-relational databases.",
     },
 
   ]
@@ -176,7 +176,7 @@ export function Experience() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto mb-6 rounded-full"></div>
           <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            A lo largo de los años, he trabajado en diferentes roles dentro del desarrollo web. Estas son algunas de las experiencias más relevantes.
+          Over the years, I have worked in different roles within web development. These are some of the most relevant experiences.
           </p>
         </motion.div>
 
